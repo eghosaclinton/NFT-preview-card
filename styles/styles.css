@@ -22,6 +22,7 @@ body{
     padding: 1em 0 0 0;
     border-radius: 16.1698px;
     background: hsl(216, 50%, 16%);
+    max-width: 450px;
 }
 
 .container-child{
@@ -32,31 +33,46 @@ body{
 
 .pic-container{
     width: 100%;
+    border-radius: 14.5526px;
+    transition: 0.5s;
+    /* flex-direction: column; */
 }
 
 .pic-container:hover{
-
+    display: inline-block;
+    background-color: hsl(178, 100%, 50%);
+    padding: 0;
 }
 
-.pic-container:focus #view{
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
-    inset: 10vh auto ;
+.pic-container img:hover{
+    z-index: -1;
+    opacity: .5;
 }
 
 #nft-photo{
     width: 100%;
+    height: 100%;
     border-radius: 14.5526px;
 }
 
 #view{
     display: none;
+    position: absolute;
+}
+
+.pic-container:hover #view{
+    display: block;
+    inset: 28vh 44%;
 }
 
 h1{
     font-size: 1.5rem;
     color: hsl(0, 0%, 100%);
+    transition: 0.5s;
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
 }
 
 p{
@@ -80,7 +96,7 @@ p{
 
 .creator{
     width:  90%;
-    padding: 1.5em 0;
+    padding: 1.5em 0 1em;
     align-items: center;
     justify-content: space-between;
 }
@@ -107,10 +123,14 @@ p{
 
 #creator{
     color: hsl(0, 0%, 100%);
+    transition: 0.5s;
+}
+
+#creator:hover{
+    color: hsl(178, 100%, 50%);
 }
 
 .attribution{
-    /* background: hsl(217, 54%, 11%); */
     margin-inline: auto;
     font-size: 0.6875rem;
     text-align: center;
@@ -135,4 +155,79 @@ hr{
 
 #user-name:hover{
     text-shadow: red 1px 0, cyan -1px 0;
+}
+
+@media (min-width: 1440px) {
+    body{
+        font-size: 1.5rem;
+    }
+    .container {
+        width: 25%;
+    }
+    .eth{
+        font-size: 1.15rem;
+    }
+
+    .time-limit{
+        font-size: 1.15rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .pic-container:hover #view{
+        display: block;
+        position: absolute;
+        align-self: center;
+        inset: 33vh 48.5%;
+    }
+
+    .offer-child{
+        font-size: 1rem;
+    }
+
+    .offer-child{
+        font-size: 1.5rem;
+    }
+
+    .creator{
+        font-size: 1.25rem;
+        width: 90%;
+    }
+
+    .creator img{
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px){
+    .container {
+        width: 50%;
+    }
+
+    .pic-container:hover #view{
+        display: block;
+        position: absolute;
+        align-self: center;
+        inset: 28vh 48.25%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        width: 60%;
+    }
+
+    .pic-container:hover #view{
+        display: block;
+        position: absolute;
+        align-self: center;
+        inset: 23vh 45.5%;
+    }
 }
