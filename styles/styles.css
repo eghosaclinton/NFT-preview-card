@@ -75,6 +75,10 @@ h1:hover{
     color: hsl(178, 100%, 50%);
 }
 
+h1:focus{
+    color: hsl(178, 100%, 50%);
+}
+
 p{
     font-weight: 300;
 }
@@ -127,6 +131,10 @@ p{
 }
 
 #creator:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+#creator:focus{
     color: hsl(178, 100%, 50%);
 }
 
