@@ -7,27 +7,49 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  Equilibrium #3429
+  <div class="container">
 
-  Our Equilibrium collection promotes balance and calm.
+    <div class="container-child flex">
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+      <div class="pic-container">
+        <img src="./images/image-equilibrium.jpg" alt="Over-Priced JPEG" id="nft-photo">
+        <img src="./images/icon-view.svg" alt="Big ahh Eye" id="view">
+      </div>
+      
+      <div class="text-container">
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="offer flex">
+          <div class="offer-child flex">
+            <img src="./images/icon-ethereum.svg" alt="Ethereum Icon">
+            <span class="eth">0.041 ETH</span>
+          </div>
+          <div class="offer-child flex">
+            <img src="./images/icon-clock.svg" alt="Clock Icon" id="time-limit">
+            <span class="time-limit">3 days left</span>
+          </div>
+        </div>
+        <hr>
+        <div class="creator flex">
+          <img src="./images/image-avatar.png" alt="Creator Avatar">
+          <div>Creation of <span id="creator">Jules Wyvern</span></div>
+        </div>
+    </div>
+
+  </div>
+
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#" id="user-name">Clinton</a>.
   </div>
 </body>
 </html>

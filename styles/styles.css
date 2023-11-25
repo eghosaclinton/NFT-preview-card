@@ -1,0 +1,138 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background:  hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 90%;
+    margin: 6.5dvh auto 3.25dvh;
+    padding: 1em 0 0 0;
+    border-radius: 16.1698px;
+    background: hsl(216, 50%, 16%);
+}
+
+.container-child{
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.pic-container{
+    width: 100%;
+}
+
+.pic-container:hover{
+
+}
+
+.pic-container:focus #view{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    inset: 10vh auto ;
+}
+
+#nft-photo{
+    width: 100%;
+    border-radius: 14.5526px;
+}
+
+#view{
+    display: none;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+p{
+    font-weight: 300;
+}
+
+.offer{
+    justify-content: space-between;
+}
+
+.offer-child{
+    align-items: center;
+    font-size: 1rem;
+    gap: .5em;
+}
+
+.offer-child img{
+    height: 1em;
+    width: .75em;
+}
+
+.creator{
+    width:  90%;
+    padding: 1.5em 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eth{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.time-limit{
+    font-weight: 600;
+}
+
+#time-limit{
+    width: 1em;
+}
+
+.creator img{
+    height: 2.5em;
+    border: solid 2px hsl(0, 0%, 100%);
+    border-radius: 100%;
+    width: 2.5em;
+}
+
+#creator{
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution{
+    /* background: hsl(217, 54%, 11%); */
+    margin-inline: auto;
+    font-size: 0.6875rem;
+    text-align: center;
+    padding: 2em;
+    color: hsl(0, 0%, 100%);
+}
+
+hr{
+    width: 100%;
+    margin: 2.5vh auto 0 auto;
+    border: none;
+    border-bottom: hsl(215, 32%, 27%) solid 2px;
+}
+
+#user-name{
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(220, 15%, 55%);
+    font-family: monospace;
+    transition: 0.5s;
+}
+
+#user-name:hover{
+    text-shadow: red 1px 0, cyan -1px 0;
+}
