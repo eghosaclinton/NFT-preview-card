@@ -41,7 +41,7 @@ Mobile view (375 x 667)
 
 ### Links
 
-- Solution URL: [Solution On Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Solution On Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-nft-preview-card-with-css-flexbox-and-media-queries-fcC_YRwrNv)
 - Live Site URL: [ace-2.netlify.app](https://ace-2.netlify.app/)
 
 ## My process
