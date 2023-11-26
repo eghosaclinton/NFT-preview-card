@@ -17,9 +17,10 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 
 ## Overview
-  The is the solution to the [Product preview card component challenge on Frontend Mentor], coded by clintt-09.
+  This addresses the challenge of the [NFT preview card component on Frontend Mentor], and it has been coded by clintt-09.
 
-There are a total of two screenshots; the Desktop and Mobile views respectively. There are also links to the github repository and the live site hosted on netlify.
+Two screenshots are available, showcasing the Desktop and Mobile views. Additionally, there are provided links to both the GitHub repository and the live site hosted on Netlify.
+
 ### The challenge
 
 Users should be able to:
@@ -46,7 +47,8 @@ Mobile view (375 x 667)
 ## My process
   Here are the tools and technologies I employed to address this challenge, insights gained throughout the problem-solving journey, areas in which I aspire to enhance my skills in the coming days, and articles that proved beneficial for me, potentially aiding others in overcoming similar challenges on Frontend Mentor or elsewhere.
 
-  This is the Process I followed to tackle this challenge.
+  This is the approach I took to address this challenge.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -56,25 +58,18 @@ Mobile view (375 x 667)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Despite the primary focus of the solution, the most important insight I gained from this challenge was the application of z-index and the relationships between parent and child elements in CSS.
 
-To see how you can add code snippets, see below:
+I encountered some minor challenges, particularly with the active state design solution, but I managed to overcome them with assistance.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.pic-container img:hover{
+    z-index: -1;
+    opacity: .5;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I experimented with a Mobile-first approach and discovered that I had been overlooking something significant... and, surprisingly, it was an enjoyable experience!
 
 ### Continued development
 

@@ -206,7 +206,7 @@ hr{
 
     .creator{
         font-size: 1.25rem;
-        width: 90%;
+        width: 100%;
     }
 
     .creator img{
@@ -216,9 +216,6 @@ hr{
 }
 
 @media (min-width: 768px) and (max-width: 1440px){
-    .container {
-        /* background-color: red; */
-    }
 
     .pic-container:hover #view{
         display: block;
